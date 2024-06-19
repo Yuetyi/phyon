@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="insertItem.css" />
+    <meta chartset="UTF-8"/>
+  <title>InsertItem</title>
+</head>
+<body>
+<div class="navbar">
+    <a href="insertItem.html">Insert Item</a>
+    <a href="edit.html">Edit&Delete Item</a>
+    <a href="uphdate.html">Update Order</a>
+    <a href="Generate.html">Generate Report</a>
+    <a href="profile.html">Profile</a>
+  </div>
+  
+  <h1 style="color: rgb(96, 231, 255);"> 
+    Insert Item System
+</h1> 
+<h2 style="color:rgb(255, 151, 191);">Management</h2> 
+
+<div id="formContainer"> 
+    <label for="nameInput"> 
+        Name:
+    </label> 
+    <input type="text" 
+           id="nameInput" 
+           placeholder="Enter Name">  
+    <label for="NameInput"> 
+        Spare Part Number: 
+    </label> 
+    <input type="text" 
+           id="NumberInput" 
+           placeholder="Enter Number"> 
+    <label for="Enter numberInput"> 
+        Stock Item Quantity: 
+    </label> 
+    <input type="text" 
+           id="Qty numberInput" 
+           placeholder="Enter Item Quantity"> 
+    <label for="addressInput"> 
+        <label for="sparePartImage" id="sparePartImage">Spare Part Image:</label>
+    <input type="file" id="sparePartImage" name="sparePartImage" accept="image/*">
+    <br>
+        Spare Part Description:(weight&Price) 
+    </label> 
+    <textarea id="DescriptionInput" 
+              placeholder="Enter Spare Part Description"> 
+    </textarea> 
+    <button onclick="addData()"> 
+          Add 
+      </button> 
+</div> 
+<table id="outputTable"> 
+    <tr> 
+        <th>Name</th> 
+        <th>Spare Part Number</th> 
+        <th>Qty numberInput</th> 
+        <th>Spare Part Description</th> 
+        <th>Action</th> 
+    </tr> 
+</table> 
+<script src="insertItem.js"></script>
+</body>
+</html>

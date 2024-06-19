@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="CodeHim">
+    <title>Bootstrap Shopping Cart </title>
+      <link rel="stylesheet" href="cart.css">
+
+  </head>
+  <body>
+
+
+    <button class="tablink" onclick="window.location.href = 'HomeD.html'">Home</button>
+  <button class="tablink" onclick="window.location.href = 'product.html'">Product</button>
+  <button class="tablink" onclick="window.location.href = 'ContactPage.html'">Contact</button>
+  <button class="tablink" onclick="window.location.href = 'cart.html'">Cart</button>
+  <br><br>
+
+ <header class="intro">
+ <h1 Style="color:rgb(255, 123, 226);">Shopping Car</h1>
+ <p style="color:blueviolet">Here IS YOUR SHOPPING RECORD</p>
+
+ </header>
+  
+  
+ <main>
+     <!-- Start DEMO HTML (Use the following code into your project)-->
+     <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xs-12">
+          <h4 class="badge-pill badge-light mt-3 mb-3 p-2 text-center">Products</h4>
+          <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6">
+              <div class="shadow-sm card mb-3 product">
+                <img class="product-img" src="100001.jpg" alt="prd1" onmouseover="animateImg(this)"
+                onmouseout="normalImg(this)"/>
+                <div class="card-body">
+                  <h5 class="card-title text-info bold product-name" style="color:rgb(15, 11, 224);">Inner tail seat metal base</h5>
+                  <p class="card-text text-success product-price">$40000HK </p>
+                  <button class="btn badge badge-pill badge-secondary mt-2 float-right" type="button"
+                    data-action="add-to-cart">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6">
+              <div class="shadow-sm card mb-3 product">
+                <img class="product-img" src="100002.jpg" alt="prd2" onmouseover="animateImg(this)"
+                onmouseout="normalImg(this)"/>
+                <div class="card-body">
+                  <h5 class="card-title text-info product-name" Style="color:blue;">Left door</h5>
+                  <p class="card-text text-success product-price">$8000HK</p>
+                  <button class="btn badge badge-pill badge-secondary mt-2 float-right" type="button"
+                  data-action="add-to-cart">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6">
+              <div class="shadow-sm card mb-3 product">
+                <img class="product-img" src="100003.jpg" alt="prd3" onmouseover="animateImg(this)"
+                onmouseout="normalImg(this)"/>
+                <div class="card-body">
+                  <h5 class="card-title text-info product-name" Style="color:blue;">Left Door Base</h5>
+                  <p class="card-text text-success product-price">$8500HK</p>
+                  <button class="btn badge badge-pill badge-secondary mt-2 float-right" type="button" 
+                  data-action="add-to-cart">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xs-12">
+          <h4 class="badge-pill badge-light mt-3 mb-3 p-2 text-center">Cart</h4>
+          <div class="cart"></div>
+        </div>
+      </div>
+    </div>    
+ </main>
+  <footer class="credit" style="color:blueviolet;">Thank you for giving us the Opportunity to serve you</footer>
+<script src="cart.js"></script>
+  </body>
+</html>
