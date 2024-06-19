@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+    Dealer
+  </title>
+  <link rel="stylesheet" href="d-acc.css">
+ <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+<body>
+  <div class = "header">
+   <a class ="#default" href="index.html">
+   <img src="logo.png" style="width:100%;max-width:200px">
+   </a>
+   <div class="header-right">
+   <a class="active" href="login.html">Login</a>
+   </div>
+  </div>
+  <h3>Please fill in the form to create an account</h3>
+
+  <form name="myForm" action="home.html" onsubmit="return validateForm()">
+
+    <label for="uname">User Name:</label><br>
+    <input type="text" id="uname" name="uname" placeholder="Enter Username"><br><br>
+
+    <label for="pass">Password:</label><br>
+    <input type="password" id="pass" name="pass" placeholder="Enter Password"><br><br>
+
+    <label for="repass">Repeat Password:</label><br>
+    <input type="password" id="repass" name="repass" placeholder="Repeat Password"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter Email Address"><br><br>
+
+    <label for="num">Contact Number:</label><br>
+    <input type="text" id="num" name="num" required pattern="^[0-9]{8}$" placeholder="Enter Contact Number"><br><br>
+
+    <label for="fax">Fax Number:</label><br>
+    <input type="text" id="fax" name="fax" placeholder="Enter Fax Number"><br><br>
+
+    <label for="address">Delivey Address:</label><br>
+    <input type="text" id="address" name="address" placeholder="Enter Delivey Address"><br><br>
+
+    <input type="submit" value="Sign in" onclick="return checkPasswords()">
+
+  </form>
+  <script src="d-acc.js"></script>
+</body>
+</html>
